@@ -1,0 +1,10 @@
+/* template/scroll-item.wxss */
+.for-film{
+    background: pink;
+    border-bottom:1rpx solid #000;
+    display:inline-block;
+    width:400rpx;
+}
+.new-film-item{
+    
+}

@@ -1,0 +1,9 @@
+<!--template/scroll-text.wxml-->
+
+<template name="slider-header">
+    
+      <navigator url="" redirect class="header-col" wx:for="{{audiolist}}">
+        {{item}} 
+     </navigator>
+    
+</template>

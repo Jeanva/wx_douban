@@ -1,0 +1,13 @@
+<!--pages/pay/pay.wxml-->
+<image class="banner" src="/image/pay.jpg"></image>
+<view class="block">
+  <view class="block-title">
+    {{payTitle}}
+  </view>
+  <text  class="block-desc">
+    {{payDesc}}
+  </text>
+  <view class="footer">
+    <button bindtap='tell'>拨打电话</button>
+  </view>
+</view>
