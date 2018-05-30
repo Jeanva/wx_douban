@@ -1,0 +1,85 @@
+/* pages/audio/audio.wxss */
+
+/* 头部横向滑动导航 */
+.header-row{
+    color:#999;
+    background-color:#fff;
+    white-space: nowrap; 
+    display:flex;
+    border-bottom: 16rpx solid #f2f2f2;
+  }
+  .header-col{
+    /* background-color:red; */
+    display:inline-block;
+    font-size:24rpx;
+    text-align:center;
+    line-height: 56rpx;
+    height:56rpx;
+    width:200rpx;
+  }
+  .header-icon{
+    width:20rpx;
+    height:20rpx;
+    margin-right:10rpx;
+  }
+
+/* 今日推荐 */
+.today-hot{
+    padding:10rpx 30rpx 30rpx 20rpx;
+    border-bottom:1rpx solid #f2f2f2;
+}
+/* .hot-title{
+    display:flex;
+    flex-direction:row;
+} */
+.hot{
+    display: inline-block;
+    font-size: 32rpx;
+    color:#333;
+    width:50%;
+}
+.hot-num{
+    display: inline-block;
+    width:50%;
+    font-size:24rpx;
+    text-align: right;
+    color:#999;
+}
+/* 电影封面 */
+.hot-films{
+    display:flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+.today-movie{
+    display:inline-block;
+    width:400rpx;
+    height:430rpx;
+    overflow: hidden;
+    white-space:normal;
+    margin-right:24rpx;
+    margin-top:20rpx;
+}
+.today-m-cover{
+    width:400rpx;
+    height:300rpx;
+}
+.sub-tag{
+    background-color: #fff;
+    font-size: 20rpx;
+    position:relative;
+    top:-80rpx;
+    left:20rpx;
+    border-radius:8rpx;
+    padding:0rpx 14rpx 5rpx 14rpx;
+}
+.m-des{
+    width:400rpx; 
+    height:100rpx;
+    font-size:28rpx;
+    background-color:#222;
+    color:#fff;
+    position:relative;
+    top:-60rpx;
+    padding:20rpx;
+}

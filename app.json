@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/audio/audio",
+    "pages/broad/broad",
     "pages/group/group",
     "pages/mine/mine",
     "pages/pay/pay",
@@ -32,7 +33,7 @@
         "selectedIconPath": "image/audio_fill.png"
       },
       {
-        "pagePath": "pages/group/group",
+        "pagePath": "pages/broad/broad",
         "text": "广播",
         "iconPath": "image/square.png",
         "selectedIconPath": "image/square_fill.png"

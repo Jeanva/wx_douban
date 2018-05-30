@@ -1,0 +1,25 @@
+/* template/scroll-text.wxss */
+
+/* 头部横向滑动导航 */
+.header-row{
+    color:#999;
+    background-color:#fff;
+    white-space: nowrap; 
+    display:flex;
+    border-bottom: 16rpx solid #f2f2f2;
+  }
+  .header-col{
+    /* background-color:red; */
+    display:inline-block;
+    font-size:24rpx;
+    text-align:center;
+    line-height: 56rpx;
+    height:56rpx;
+    width:200rpx;
+  }
+  
+  .header-icon{
+    width:20rpx;
+    height:20rpx;
+    margin-right:10rpx;
+  }

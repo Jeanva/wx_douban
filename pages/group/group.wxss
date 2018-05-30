@@ -1,0 +1,79 @@
+/* pages/group/group.wxss */
+.group-content{
+    margin:20rpx;
+}
+.group-type{
+    margin:20rpx;
+    border-top:solid  1rpx #ccc; 
+     
+    color:#333; 
+    font-size:30rpx; 
+    font-weight:bold; 
+    text-align:center
+}
+.type-ctn{
+    position:relative;
+    top:-20rpx;
+    background-color:#fff; 
+    padding-left:30rpx; 
+    padding-right:30rpx;
+}
+.group-item{
+    display:flex;
+    flex-direction:row;
+    padding-right:0rpx;
+}
+.group-item image{
+    width:120rpx;
+    height:120rpx; 
+    border-radius:10rpx; 
+    margin:10rpx 30rpx 10rpx 10rpx;
+}
+.group-name{
+    width:400rpx;
+    padding-top:20rpx; 
+    line-height:50rpx;
+    height:50rpx;
+}
+.group-des{
+    font-size:28rpx; 
+    color:#666;
+}
+.group-mb{
+    width:200rpx;
+    height:120rpx;
+    line-height:120rpx;
+    display: flex;
+    flex-direction: row;
+}
+.group-mb image{
+    padding-top:20rpx;
+    margin-right:0rpx;
+    width:64rpx;
+    height:64rpx;
+}
+.mb-num{
+    font-size:24rpx; 
+    color:#ccc;
+    width:120rpx;
+    text-align: right;
+}
+.group-num{
+    display: table-cell;  
+    height:300rpx;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300rpx;
+    width:750rpx;
+}
+.group-num view{
+    text-align: center;
+     line-height: 50rpx;  
+    /* display: block;    */
+    vertical-align: middle;  
+}
+.interest{
+  font-size:24rpx;
+  color:#999;
+  padding-left:20rpx;
+}
