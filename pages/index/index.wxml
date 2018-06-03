@@ -8,40 +8,47 @@
   </block>
 </swiper>
 -->
-<scroll-view scroll-x="true" class="header-row">
-    
-      <navigator url="" redirect class="header-col" wx:for="{{headerslist}}">
-        <image class="header-icon" src="{{item.img}}" />{{item.title}} 
+<import src="../../template/scroll-item.wxml" />
+
+ <scroll-view scroll-x="true" class="header-row">
+      <!--<navigator url="" redirect class="header-col" wx:for="{{headerslist}}">
+        <image class="header-icon" src="{{item.img}}" wx:if="{{item.img}}"  />{{item.title}} 
       </navigator>
+    -->
+    <template is="scroll-item" wx:for="{{headerslist}}" data="{{item}}">
+    </template>
+
     
-    
-</scroll-view>  
+</scroll-view>   
+
 
 <view class="item-list">
   <view class="pro-item" wx:for="{{proList}}" bindtap="toDetail" wx:key="{{index}}">
     
     <view class="pro-body">
-      
-      <view class="pro-middle">
+      <!-- 循环内容 -->
+
+      <!--<view class="pro-middle">
         <view class="item-left">
-        <!-- 标题 -->
+         标题
           <view class="pro-title">
             <image class="btn-detail" src="/image/hot.png"></image>
               {{item.title}}
           </view>
-          <!-- 内容 -->
+           内容 
           <view class="pro-desc">
             <text>{{item.desc}}</text>
           </view>
         </view>
-        <!-- 图片 -->
+         图片 
         <view class="item-right"><image class="pro-img" src="{{item.img}}"></image></view>
-      </view>
+      </view>-->
+      <template is="pro-middle" data="{{item}}"></template>
 
-      <view class="pro-footer">
-         <image class="author_avatar" src="/image/avatar.png"></image>
+      <!--<view class="pro-footer">
+         <image class="author_avatar" src="{{author_img}}"></image>
          <text class="author">{{item.author}}</text>
-      </view>
+      </view>-->
      
     </view>
  

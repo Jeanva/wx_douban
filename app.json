@@ -3,12 +3,13 @@
     "pages/index/index",
     "pages/audio/audio",
     "pages/broad/broad",
+    "pages/broad/detail",
     "pages/group/group",
     "pages/mine/mine",
     "pages/pay/pay",
     "pages/logs/logs",
-    "template/scroll-text",
-    "template/scroll-item"
+    "template/scroll-item",
+    "template/title"
   ],
   "window": {
     "backgroundTextStyle": "light",

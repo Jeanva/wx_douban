@@ -1,4 +1,5 @@
 /* pages/group/group.wxss */
+@import "../../template/title.wxss";
 .group-content{
     margin:20rpx;
 }

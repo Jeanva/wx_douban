@@ -1,38 +1,11 @@
-// pages/group/group.js
+// template/title.page.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      title:'小组',
-      group_count:430428,
-      grouplist:[
-        {
-          group_name:'微单摄影同学会',
-          group_des:'一群摄影爱好者的交流区',
-          member:68,
-          img:'/image/choosen.png',
-        },
-        {
-          group_name:'微单摄影同学会',
-          group_des:'一群摄影爱好者的交流区',
-          member:68,
-          img:'/image/choosen.png',
-        },
-        {
-          group_name:'微单摄影同学会',
-          group_des:'一群摄影爱好者的交流区',
-          member:68,
-          img:'/image/choosen.png',
-        },
-        {
-          group_name:'微单摄影同学会',
-          group_des:'一群摄影爱好者的交流区',
-          member:68,
-          img:'/image/choosen.png',
-        }
-      ]
+  
   },
 
   /**

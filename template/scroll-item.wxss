@@ -1,10 +1,104 @@
-/* template/scroll-item.wxss */
+/*头部滑动导航*/
+.header-col{
+  display:inline-block;
+  font-size:24rpx;
+  text-align:center;
+  line-height: 56rpx;
+  height:56rpx;
+  width:200rpx;
+}
+
+
+.sv-search-film{
+  display:flex;
+  white-space:nowrap; 
+  height:120rpx;
+  border-bottom:#f2f2f2 1rpx solid;
+}
 .for-film{
-    background: pink;
-    border-bottom:1rpx solid #000;
+    /* border-bottom:1rpx solid #f2f2f2; */
     display:inline-block;
     width:400rpx;
+    padding-top:20rpx; 
+    padding-right:20rpx;
 }
-.new-film-item{
-    
+.for-film image{
+  width:60rpx;
+  height:60rpx;
+  display:inline-block; 
+  padding-left:20rpx;
+}
+.for-film view{
+   display:inline-block; 
+}
+.search-film{
+  font-size:24rpx;
+}
+.to-film{
+  position:relative;
+  top:-14rpx; 
+  left:50rpx;
+  height:60rpx;
+  border-right:1rpx #f2f2f2 solid;
+}
+.to-film image{
+  width:32rpx;
+  height:32rpx;
+}
+.new-film-item-cnt{
+    width:220rpx;
+    display:inline-block;
+}
+.add-film{
+  background-color:#ccc;font-size:48rpx;
+  position:relative;
+  bottom:-60rpx;
+  opacity:0.5;
+  width:60rpx;height:60rpx;
+  line-height:48rpx;
+  text-align:center;
+}
+.new-film-cover{
+  border-radius:10rpx;
+  width:200rpx;
+  height:300rpx;
+}
+
+/* 今日推荐 */
+.today-hot{
+  padding:10rpx 30rpx 30rpx 20rpx;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.today-movie{
+  background-color:#f2f2f2;
+  display:inline-block;
+  width:400rpx;
+  height:430rpx;
+  overflow: hidden;
+  white-space:normal;
+  margin-right:24rpx;
+  margin-top:20rpx;
+}
+.today-m-cover{
+  width:400rpx;
+  height:300rpx;
+}
+.sub-tag{
+  background-color: #fff;
+  font-size: 20rpx;
+  position:relative;
+  top:-80rpx;
+  left:20rpx;
+  border-radius:8rpx;
+  padding:0rpx 14rpx 5rpx 14rpx;
+}
+.m-des{
+  width:400rpx; 
+  height:100rpx;
+  font-size:28rpx;
+  background-color:#222;
+  color:#fff;
+  position:relative;
+  top:-60rpx;
+  padding:20rpx;
 }

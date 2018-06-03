@@ -1,3 +1,5 @@
+@import '../../template/scroll-item.wxss';
+
 swiper{
   width:100%;
   height:340rpx;
@@ -15,15 +17,15 @@ swiper Image{
   display:flex;
   border-bottom: 16rpx solid #f2f2f2;
 }
-.header-col{
-  /* background-color:red; */
+/*头部滑动导航 可删*/
+/* .header-col{
   display:inline-block;
   font-size:24rpx;
   text-align:center;
   line-height: 56rpx;
   height:56rpx;
   width:200rpx;
-}
+} */
 
 .header-icon{
   width:20rpx;
@@ -52,6 +54,7 @@ swiper Image{
   color:#212121;
   font-size:32rpx;
   height:32rpx;
+  white-space: nowrap;
 }
 .pro-middle{
   overflow: hidden;
@@ -98,6 +101,7 @@ swiper Image{
   padding:0rpx;
 }
 .author_avatar{
+  border-radius:20rpx;
   width:40rpx;
   height:40rpx;
 }

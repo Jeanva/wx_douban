@@ -1,0 +1,63 @@
+/* pages/broad/detail.wxss */
+@import '/template/title';
+.detail-content{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    font-size:28rpx;
+}
+.user_img{
+    border-radius:60rpx;
+    width:120rpx;
+    height:120rpx;
+    /* border:1rpx solid #000; */
+    margin:20rpx;
+}
+.user_name{
+    height:160rpx;
+    line-height: 160rpx;
+    width:440rpx;
+}
+.post_date{
+    color:#ccc;
+    text-align: right;
+    height:160rpx;
+    line-height: 160rpx;
+}
+.vlevel{
+    background-color:#fff;
+    border-radius:10rpx;
+    border:1rpx #fff solid;
+    width:20rpx;
+    height:20rpx;
+    position:relative;
+    left:-40rpx;
+    top:100rpx;
+}
+/*点赞  及 最近点赞*/
+.zan{
+    display: flex;
+    flex-direction: row;
+}
+/*点赞按钮*/
+.zan_btn{
+    border:1rpx #c9c9c9 solid;
+    border-radius:10rpx;
+    color:#999;
+    height:50rpx;
+    width:110rpx;
+    text-align:center;
+    line-height:50rpx;
+    margin-left:24rpx;
+}
+/*最近点赞*/
+.rencent_zan{
+    width:530rpx;
+    text-align: right;
+}
+.rencent_zan image{
+    border-radius:30rpx;
+    width:48rpx;
+    height:48rpx;
+    margin-right:10rpx;
+}

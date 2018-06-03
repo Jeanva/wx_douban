@@ -1,7 +1,10 @@
 <!--pages/group/group.wxml-->
-<view style="text-align:center">小组</view>
+<import src="/template/title.wxml" />
+<import src="/template/scroll-item.wxml" />
+<template is='title' data="{{title}}"></template>
+
 <view class="group-num" >
-    <view>430428个小组等你来玩\n</view>
+    <view>{{group_count+'个小组等你来玩'}}\n</view>
     <view style="color:#999;font-size:24rpx;">立即选择加入吧!</view>
 </view>
 <view class="interest">
@@ -14,7 +17,9 @@
 <view class="group-type">
         <text class="type-ctn">新组速报</text>
 </view>
-<view class="group-content">
+
+<!-- 模板位置 -->
+<!--<view class="group-content">
     
     <view class="group-item">
         <image src="/image/bing.jpeg" />
@@ -31,59 +36,11 @@
             <image src="/image/choosen.png" />
         </view>
     </view>
-</view>
 
-<view class="group-content">
-    <view class="group-item">
-        <image src="/image/bing.jpeg" />
-        <view class="group-name">
-            <view>
-                微单摄影同学会
-            </view>
-            <view class="group-des">
-                这是一个摄影交流小组
-            </view>
-        </view>
-        <view class="group-mb">
-            <view class="mb-num">571人</view>
-            <image src="/image/choosen.png" />
-        </view>
-    </view>
-</view>
+</view>-->
+<template is="group-content" wx:for="{{grouplist}}" data="{{item}}">
+</template>
 
-<view class="group-content">
-    <view class="group-item">
-        <image src="/image/bing.jpeg" />
-        <view class="group-name">
-            <view>
-                微单摄影同学会
-            </view>
-            <view class="group-des">
-                这是一个摄影交流小组
-            </view>
-        </view>
-        <view class="group-mb">
-            <view class="mb-num">571人</view>
-            <image src="/image/choosen.png" />
-        </view>
-    </view>
-</view>
 
-<view class="group-content">
-    <view class="group-item">
-        <image src="/image/bing.jpeg" />
-        <view class="group-name">
-            <view>
-                微单摄影同学会
-            </view>
-            <view class="group-des">
-                这是一个摄影交流小组
-            </view>
-        </view>
-        <view class="group-mb">
-            <view class="mb-num">571人</view>
-            <image src="/image/choosen.png" />
-        </view>
-    </view>
-</view>
+
 </scroll-view>

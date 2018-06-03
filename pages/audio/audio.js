@@ -9,7 +9,36 @@ Page({
     normalStar:'/image/star.png',
     selectedStar:'/image/star_fill.png',
     audiolist:[
-      "电影","电视","综艺","读书","同城","音乐"
+      {
+        title:"电影"
+      ,img:"",
+        url:"#"
+      },
+      {
+        title:"电视"
+      ,img:"",
+        url:"#"
+      },
+      {
+        title:"综艺"
+      ,img:"",
+        url:"#"
+      },
+      {
+        title:"读书"
+      ,img:"",
+        url:"#"
+      },
+      {
+        title:"同城"
+      ,img:"",
+        url:"#"
+      },
+      {
+        title:"音乐"
+      ,img:"",
+        url:"#"
+      }
     ],
     score:0,
     selectToAdd:false,
@@ -29,7 +58,55 @@ Page({
         "title":"找电影",
         "ctlg":"大陆 / 豆瓣高分 / 日本",
       },
-  ]
+    ],
+    newfilms:[
+      {
+        "name":"复仇者联盟三",
+        "img":"/image/fulian3.jpg",
+        "score":"0"
+      },
+      {
+        "name":"昼颜",
+        "img":"/image/zhouyan.jpg",
+        "score":"1"
+      },
+      {
+        "name":"完美陌生人",
+        "img":"/image/msr.jpg",
+        "score":"3"
+      },
+      {
+        "name":"罪途2",
+        "img":"/image/zuitu.jpg",
+        "score":"4"
+      }
+    ],
+    todayfilm:{
+      title:'今日推荐',
+      film_num:10,
+    },
+    film_list:[
+      {
+      "film_tag":"缤纷盘点",
+      "film_desc":"一脸冷漠看完《昆池岩》？这份片单给你更猛的",
+      "img":"/image/movie_1.jpg"
+      },
+      {
+        "film_tag":"今晚我有空",
+        "film_desc":"豆瓣9.1分，封神般的演技",
+        "img":"/image/hps.jpg"
+      },
+      {
+        "film_tag":"缤纷盘点",
+        "film_desc":"一脸冷漠看完《昆池岩》？这份片单给你更猛的",
+        "img":"/image/movie_1.jpg"
+        },
+        {
+          "film_tag":"今晚我有空",
+          "film_desc":"豆瓣9.1分，封神般的演技",
+          "img":"/image/hps.jpg"
+        }
+    ]
   },
 
   /**

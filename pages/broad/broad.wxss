@@ -1,7 +1,7 @@
 /* pages/group/group.wxss */
-
+@import '../../template/title.wxss';
 .Card{
-    height:480rpx;
+    height:400rpx;
     width:670rpx;
     border-radius: 10rpx;
     box-shadow: 1rpx 1rpx 10rpx 4rpx rgb(230, 229, 229);
@@ -24,9 +24,14 @@
 .des{
     font-size:30rpx;
     color:#333;
+    height:190rpx;
     padding-top:10rpx;
-    white-space:no-wrap;
+    /* white-space:no-wrap; */
     overflow: hidden;
+}
+.follower{
+    font-size:24rpx; 
+    color:#ccc;
 }
 .close-btn{
     /* background-color: #00B51D; */

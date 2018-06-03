@@ -1,0 +1,4 @@
+<!--template/title.page.wxml-->
+<template name='title'>
+  <view class='title-center'>{{title}}</view>
+</template>
