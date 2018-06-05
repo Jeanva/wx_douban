@@ -138,3 +138,27 @@
         </view>
     </view>
 </template>
+
+<!-- /group/detail.wxml 评论及转发 -->
+<template name="comment">
+    
+<view class="comment">
+    <image src="/image/bing.jpeg"  />
+
+    <view class="com_detail">
+        <view class="com_user">               
+            <view class="com_name">            
+                <view>{{item.user}}</view>
+                <view class="com_date">{{item.date}}</view>
+            </view>
+            <view class="more_com">
+                <image src="/image/slh.png" />
+            </view>
+        </view>
+
+        <view>
+            <view class="at" wx:if="{{item.to}}">@<navigator url="" redirect hover-class="className">{{item.to}}</navigator></view>{{item.comment}}
+        </view>
+     </view>
+</view>
+</template>

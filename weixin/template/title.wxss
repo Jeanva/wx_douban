@@ -1,4 +1,0 @@
-/* template/title.page.wxss */
-.title-center{
-  text-align:center;
-}
