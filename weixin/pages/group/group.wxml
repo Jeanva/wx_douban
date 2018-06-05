@@ -1,0 +1,46 @@
+<!--pages/group/group.wxml-->
+<import src="/template/title.wxml" />
+<import src="/template/scroll-item.wxml" />
+<template is='title' data="{{title}}"></template>
+
+<view class="group-num" >
+    <view>{{group_count+'个小组等你来玩'}}\n</view>
+    <view style="color:#999;font-size:24rpx;">立即选择加入吧!</view>
+</view>
+<view class="interest">
+  根据你的兴趣推荐
+</view>
+<image src='/image/4group-1.png' style="width:750rpx;height:180rpx;"></image>
+
+<scroll-view scroll-y="true">
+    
+<view class="group-type">
+        <text class="type-ctn">新组速报</text>
+</view>
+
+<!-- 模板位置 -->
+<!--<view class="group-content">
+    
+    <view class="group-item">
+        <image src="/image/bing.jpeg" />
+        <view class="group-name">
+            <view>
+                微单摄影同学会
+            </view>
+            <view class="group-des">
+                这是一个摄影交流小组
+            </view>
+        </view>
+        <view class="group-mb">
+            <view class="mb-num">571人</view>
+            <image src="/image/choosen.png" />
+        </view>
+    </view>
+
+</view>-->
+<template is="group-content" wx:for="{{grouplist}}" data="{{item}}">
+</template>
+
+
+
+</scroll-view>

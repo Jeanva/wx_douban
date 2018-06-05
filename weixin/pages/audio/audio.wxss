@@ -1,0 +1,58 @@
+/* pages/audio/audio.wxss */
+@import '../../template/scroll-item.wxss';
+/* 头部横向滑动导航 */
+.header-row{
+    color:#999;
+    background-color:#fff;
+    white-space: nowrap; 
+    display:flex;
+    border-bottom: 16rpx solid #f2f2f2;
+  }
+  /* 头部滑动导航 可删 */
+  /* .header-col{
+    display:inline-block;
+    font-size:24rpx;
+    text-align:center;
+    line-height: 56rpx;
+    height:56rpx;
+    width:200rpx;
+  } */
+  .header-icon{
+    width:20rpx;
+    height:20rpx;
+    margin-right:10rpx;
+  }
+
+/* 今日推荐 */
+
+/* .hot-title{
+    display:flex;
+    flex-direction:row;
+} */
+.hot{
+    display: inline-block;
+    font-size: 32rpx;
+    color:#333;
+    width:50%;
+}
+.hot-num{
+    display: inline-block;
+    width:50%;
+    font-size:24rpx;
+    text-align: right;
+    color:#999;
+}
+/* 电影封面 */
+.hot-films{
+    display:flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+/* 找电影 */
+.sv-search-film{
+  display:flex;
+  white-space:nowrap; 
+  height:120rpx;
+  border-bottom:#f2f2f2 1rpx solid;
+}
