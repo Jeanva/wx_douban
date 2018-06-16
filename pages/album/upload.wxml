@@ -1,0 +1,30 @@
+<!--pages/album/upload.wxml-->
+<text>pages/album/upload.wxml</text>
+<!--
+https://blog.csdn.net/m0_37852904/article/details/79853745
+https://www.jb51.net/article/141014.htm
+http://www.php.cn/xiaochengxu-389006.html
+-->
+<view class="weui-cell">
+  <view class="weui-cell__bd">
+    <view class="weui-uploader">
+      <view class="weui-uploader__hd">
+        <view class="weui-uploader__title">点击可预览选好的图片</view>
+        <view class="weui-uploader__info">{{pics.length}}/9</view>
+      </view>
+      <view class="weui-uploader__bd">
+        <view class="weui-uploader__files">
+          <block wx:for="{{pics}}" wx:for-item="image">
+            <view class="weui-uploader__file">
+              <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+            </view>
+          </block>
+        </view>
+        <!-- isShow 这个是判断是否进行触发点隐藏操作-->
+        <view class="weui-uploader__input-box {{isShow?'true':'hideTrue'}}">
+          <view class="weui-uploader__input" bindtap="chooseImage"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

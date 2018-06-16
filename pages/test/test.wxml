@@ -1,0 +1,7 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+
+<view bindtap="handleClick">
+    {{test_data}}
+</view>
+

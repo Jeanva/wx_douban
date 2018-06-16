@@ -1,0 +1,52 @@
+/* pages/album/album.wxss */
+@import '../../template/title.wxss';
+.create-album-btn{
+    background-color:#fff;
+    border:solid 1px #00B51D; 
+    color:#00B51D;width:300rpx;
+}
+.album_list{
+  padding:20rpx;
+  display: block;
+  width:100%;
+   /* display: table;  */
+   /* flex-direction: row;  */
+}
+/* 相册封面 */
+.album_item{
+
+  background-image:linear-gradient(to top, rgba(0,0,0,0.7) 0,rgba(0,0,0,0.4) 10%, rgba(0,0,0,0) 36%);
+  border:1rpx solid #CCC;
+  color:#fff;
+  float:left;
+  font-size:30rpx;
+  margin:20rpx;
+  width:315rpx;
+  height:315rpx;
+  text-align: left;
+  text-indent: 1em;
+}
+.album_des{
+  margin-top:214rpx;
+}
+.album_name{
+}
+.photo_num{
+  font-size:28rpx;
+}
+/* 创建相册 */
+.create_album{
+  background: none;
+  color:#666;
+  line-height: 315rpx;
+  background-color:#f2f2f2; 
+  text-align: center;
+  text-indent: -.5em;
+}
+.new_album{
+  display: block;
+  width:100%;
+}
+.hideTrue{
+  display: none;
+}

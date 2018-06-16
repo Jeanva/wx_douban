@@ -1,0 +1,24 @@
+<!--pages/dairy/dairy.wxml-->
+<import src="/template/title.wxml" />
+<template is="title" data="{{title}}"></template>
+
+<view>
+    <view class='dairy_com'>
+        <view class='dairy_title'>        
+            <input type="" placeholder="标题" auto-focus  style='' />
+        </view>
+        <view class='dairy_content'>
+            <input type="" placeholder="内容" auto-focus  />
+        </view>
+    </view>
+    <view class='actions'>
+        <view class='key-board'>
+           <image src="/image/close.png" />
+        </view>
+        <view class='other-btn'>
+           <image src="/image/close.png" />
+           <image src="/image/close.png" />
+           <image src="/image/close.png" />
+        </view>
+    </view>
+</view>

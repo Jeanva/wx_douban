@@ -1,0 +1,40 @@
+/* pages/dairy/dairy.wxss */
+@import '/template/title.wxss';
+
+.actions{
+    background: #f2f2f2;
+    position: fixed;
+    bottom:0rpx;
+    height:40rpx;
+    padding:20rpx;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+.actions image{
+    width:32rpx;
+    height:32rpx;
+}
+.key-board{
+    width:50%;
+}
+.other-btn{
+    width:50%;
+}
+.dairy_com{
+    color:#999;
+    font-size:32rpx;
+    padding:40rpx;
+}
+.dairy_title{
+    height:60rpx;
+    
+}
+.dairy_title input {
+    border-bottom:1rpx solid #ccc;
+    line-height: 60rpx;
+    padding-bottom:20rpx;
+}
+.dairy_content{
+    padding-top:30rpx;
+}

@@ -1,0 +1,9 @@
+<!--pages/scan/scan.wxml-->
+<text>扫一扫</text>
+<button bindtap='scan'>点击扫描二维码</button>
+
+
+<view class="container">  
+  <view class="saoma" bindtap="click">点我扫一扫</view>  
+  <view class="show">{{show}}</view>  
+</view>  
