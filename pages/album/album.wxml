@@ -1,11 +1,11 @@
 <!--pages/album/album.wxml-->
 <import src="/template/title.wxml" />
-<template is="title" data="{{title}}"></template>
+<!-- <template is="title" data="{{title}}"></template> -->
 
-<view class="album_list">
-    <view class='album_item create_album' bindtap='createAlbum'>+创建相册</view>
+<view class="album_list " >
+    <view class='album_item create_album' bindtap='gotoCreate'>+创建相册</view>
 
-    <view class='album_item' wx:for='{{albumList}}' data='{{albumList.item}}'>
+    <view class='album_item ' wx:for='{{albumList}}' data='{{albumList.item}}' bindtap="uploadImage">
       <view class='album_des'>
         <view class='album_name'>{{item.name}}</view>
         <view class='photo_num'>{{item.length}}张照片</view>
@@ -19,7 +19,7 @@
 <view class="new_album ">
     <view style='font-size:32rpx;text-align:center;padding-top:300rpx; line-height:32rpx;'>您还没有上传过照片\n</view>
     <view style='font-size:30rpx;text-align:center;color:#ccc; padding:30rpx 0 100rpx 0; '>把相片放进相册，和友邻分享</view>
-    <button class='create-album-btn'>创建相册</button>
-    <button style='background-color:#fff;border:solid 1px #00B51D; color:#00B51D;width:300rpx;' bindtap="bindChooiceProduct">上传照片</button>
+    <button class='create-album-btn' bindtap='gotoCreate'>创建相册</button>
+    <!-- <button style='background-color:#fff;border:solid 1px #00B51D; color:#00B51D;width:300rpx;' bindtap="bindChooiceProduct">上传照片</button> -->
 </view>
 

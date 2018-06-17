@@ -4,6 +4,7 @@
 .album_com{
     border-bottom:16rpx solid #f2f2f2;
     font-size:28rpx;
+    padding-bottom:20rpx;
 }
 .album_title{
     height:60rpx;
@@ -15,7 +16,15 @@
   margin:20rpx 40rpx 20rpx 40rpx;
 }
 .album_content{
-    margin:20rpx 40rpx 20rpx 30rpx;
+  border-bottom:solid #f2f2f2 16rpx;
+  margin:20rpx 0rpx 20rpx 0rpx;
+  padding:0 40rpx 0 40rpx;
+}
+.create_btn{
+  background: #fff;
+  border:#00B51D 1rpx solid;
+  color:#00B51D;
+  width:50%;
 }
 /* 频道 */
 .chanel_list{
@@ -53,8 +62,13 @@
   color:#555;
   font-size:28rpx;
   height:50rpx;
-  padding:20rpx;
+  padding:20rpx 0 20rpx 40rpx;
 }
+navigator{
+  display: inline;
+  color:green
+}
+
 ::-webkit-scrollbar{
   width:0;
   height:0;

@@ -1,51 +1,33 @@
 // pages/album/create.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    newAlbum:
+      {albumName:'',albumDes:''}
+    ,
     chanel:[
-      {
-        name:'美食',
-        num:150635,
-      },
-      {
-        name: '摄影',
-        num: 150635,
-      },
-      {
-        name: '美食',
-        num: 150635,
-      },
-      {
-        name: '摄影',
-        num: 150635,
-      },
-      {
-        name: '美食',
-        num: 150635,
-      },
-      {
-        name: '摄影',
-        num: 150635,
-      },
-      {
-        name: '美食',
-        num: 150635,
-      },
-      {
-        name: '摄影',
-        num: 150635,
-      },
+      {name:'美食',num:150635,},
+      {name: '摄影',num: 150635,},
+      {name: '美食',num: 150635,},
+      {name: '摄影',num: 150635,},
+      {name: '美食',num: 150635,},
+      {name: '摄影',num: 150635,},
+      {name: '美食',num: 150635,},
+      {name: '摄影',num: 150635,},
     ],
+    // getGlobalAlbum:app.globalData.albumList
   },
-
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var getGlobalAlbum = app.globalData.albumList;
+    console.log(getGlobalAlbum);
   },
 
   /**
@@ -95,5 +77,27 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  inputTitle:function(e){
+    // console.log(e.detail.value);
+    //将输入值保存到当前数据对象中
+    this.data.newAlbum.albumName = e.detail.value;
+    console.log(this.data.newAlbum.albumName);
+  },
+  inputDes:function(e){
+    // console.log(e.detail.value);
+    //将输入值保存到当前数据对象中
+    this.data.newAlbum.albumDes = e.detail.value;
+    console.log(this.data.newAlbum.albumDes);
+  },
+  //创建相册并跳转到相册列表
+  createAlbum:function(){
+    var albumName = this.data.newAlbum.albumName;
+    var albumDes = this.data.newAlbum.albumDes;
+    wx.navigateTo({
+      url: 'album?album_name=' + albumName+'&album_des='+albumDes
+    });
+    getApp().globalData.albumList.push({name:albumName,des:albumDes}) ;
+    console.log(getApp().globalData.albumList);
   }
 })

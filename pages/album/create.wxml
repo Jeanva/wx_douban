@@ -5,16 +5,17 @@
 <view>
     <view class='album_com'>
         <view class='album_title'>        
-            <input type="" placeholder="相册名" auto-focus />
+            <input type="" placeholder="相册名" auto-focus bindblur='inputTitle' />
         </view>
         <view class='album_content'>
-            <textarea  placeholder="相册描述" auto-focus  />
+            <textarea  placeholder="相册描述" bindblur='inputDes' />
         </view>
+        <button class='create_btn' bindtap='createAlbum'>创建相册</button>
     </view>
     <view class='chanel_list'>
     
         把内容投放到频道，让更多人看到
-        <input type="" placeholder="添加" auto-focus class='add_chanel' />
+        <input type="" placeholder="添加" class='add_chanel' />
         <scroll-view class='chanel_scroll' scroll-y="true">
             <view class='chanel' wx:for="{{chanel}}" data="{{chanel.item}}">
                <text>{{item.name}}</text>
@@ -25,10 +26,13 @@
     </view>
     <view>
       <view class='requirement'>
-        <view style='display:inline;float:left;'>这是我的原创内容《豆瓣原创相册声明》</view> <view style='display:inline;float:right;'><switch bindchange=''></switch></view>
+        <view style='display:inline;float:left;'>这是我的原创内容<navigator>《豆瓣原创相册声明》</navigator>
+        </view> 
+        <view style='display:inline;float:right;'><switch bindchange=''></switch></view>
       </view>
       <view class='requirement'>
         <view style='display:inline;float:left;'>开启照片水印</view> <view style='display:inline;float:right;'><switch bindchange=''></switch></view>
       </view>
+      
     </view>
 </view>
