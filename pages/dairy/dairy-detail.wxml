@@ -1,0 +1,30 @@
+<!--pages/dairy/dairy-detail.wxml-->
+ <view class='dairy_head'>第一篇豆瓣</view> 
+ <!-- 用户头像，日记标题，修改日期，浏览次数 -->
+<view class='author_pic_info'>
+  <image src='/image/bing.jpeg' class='author_img'></image>
+  <view class='author_info'>
+    <view class='author_name'>
+      <text class='author_in_dairy' bindtap='toProfile'>{{author}}</text>的日记
+     </view> 
+    <text style='font-size:24rpx;'>2018-06-18</text>
+  </view>
+  <view class='view'>{{view}}人浏览</view>
+</view>
+
+<view class='dairy_content'>{{detail}}</view>
+
+<view class='author_des'>
+  <image src='/image/bing.jpeg'></image>
+  <view class='author_res'>
+    <view class='author_name_b'>作者
+      <text style='color:#000;' bindtap='toProfile'>{{author}}</text>
+    </view>
+    <text class='author_pre'>暂无简介，去看看他的个人主页</text>
+  </view>
+</view>
+
+<view style='background-color:#f2f2f2;color:#999;font-size:26rpx;padding:30rpx;'>
+    回复
+</view>
+<navigator class='goto' bindtap='toComment'>写回复</navigator>

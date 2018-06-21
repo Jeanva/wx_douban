@@ -1,0 +1,70 @@
+/* pages/dairy/dairy-detail.wxss */
+.dairy_head{
+  font-size:48rpx;
+  font-weight: bold;
+  margin:30rpx 30rpx;
+}
+.author_pic_info{
+  display:flex;
+  flex-direction:row; 
+  color:#ccc;
+  margin:30rpx 30rpx;
+}
+.dairy_content{
+  display: block;
+  font-size:32rpx;
+  line-height: 50rpx;
+  border-bottom:1rpx solid #f2f2f2;
+  margin:30rpx 30rpx;
+  padding:0 10rpx 50rpx;
+}
+.author_img{
+  border-radius:60rpx;
+  width:100rpx;
+  height:100rpx;
+}
+.author_in_dairy{
+  color:#000;
+  margin-right:20rpx;
+}
+.author_info{
+  padding-left:20rpx;
+  width:66%;
+}
+.author_name{
+  color:#999;
+  font-size:32rpx;
+}
+.view{
+  font-size:24rpx;
+  line-height: 100rpx;
+}
+.author_des{
+  display: flex;
+  flex-direction: row;
+  padding:30rpx;
+}
+.author_des image{
+  border-radius:70rpx;
+  width:120rpx;
+  height:120rpx;
+}
+.author_res{
+  color:#ccc;
+  font-size:24rpx;
+  width:76%;
+  padding:20rpx;
+}
+.author_name_b{
+  font-size:32rpx;
+  line-height:60rpx;
+}
+.author_pre{
+  color:#666;
+}
+.goto{
+  color:#00b51D;
+  font-size:28rpx;
+  line-height: 72rpx;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+<!--pages/dairy/dairy-list.wxml-->
+ <!-- <text>我的日记</text>  -->
+<view class='dairy_list'>
+  <view class='dairy' wx:for='{{dairy}}' bindtap=''>
+      <view class='dairy_item'>
+          <view class='dairy_pre'>
+            <text>{{item.name}}</text>
+            <view class='dairy_des'>{{item.des}}</view>
+          </view>
+          <view class='dairy_img {{item.img? true :"hideTrue"}}'> 
+              <image src='{{item.img}}'></image>
+          </view> 
+      </view>
+      <view class='dairy_btm'>
+            <text class='dairy_date'>{{item.date}}</text>
+            <text class='dariry_privicy'>{{item.priv}}</text>
+      </view>
+  </view>
+
+
+</view>
