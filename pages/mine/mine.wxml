@@ -31,9 +31,9 @@
     </view>
 </view>
 
-<view class="listItem'" wx:for="{{tagList}}" >
+<view class="listItem'" wx:for="{{tagList}}">
     <image src="{{item.imgUrl}}"  />
-    <text>{{item.tag}}</text>
+    <text bindtap="{{item.itemFn}}" >{{item.tag}}</text>
     <view class="redirectTo">
         <image src="/image/arrow.png" />
     </view>

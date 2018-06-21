@@ -6,10 +6,20 @@
     "pages/broad/detail",
     "pages/group/group",
     "pages/mine/mine",
+    "pages/mine/focus",
+    "pages/mine/likes",
     "pages/pay/pay",
+    "pages/dairy/dairy",
+    "pages/dairy/dairy-list",
+    "pages/dairy/dairy-detail",
+    "pages/album/album",
+    "pages/album/create",
+    "pages/album/upload",
+    "pages/scan/scan",
     "pages/logs/logs",
     "template/scroll-item",
-    "template/title"
+    "template/title",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",

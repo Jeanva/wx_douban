@@ -1,0 +1,13 @@
+<!--pages/mine/likes.wxml-->
+<text>我的喜欢</text>
+<view class='my_fav'>
+  <view class='fav_title'>标题</view>
+  <view class='fav_date'>2018-6-21添加</view>
+  <view class='fav_des'>描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行</view>
+</view>
+
+<view class='my_fav'>
+  <view class='fav_title'>标题</view>
+  <view class='fav_date'>2018-6-21添加</view>
+  <view class='fav_des'>描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行,描述内容，两行</view>
+</view>

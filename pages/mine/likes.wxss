@@ -1,0 +1,29 @@
+/* pages/mine/likes.wxss */
+.my_fav{
+  border-bottom:1rpx solid #f2f2f2; 
+  line-height:48rpx;
+  padding:30rpx;
+  position:relative;
+}
+.fav_title{
+  font-size:30rpx;
+  line-height:60rpx;
+  color:#333;
+}
+.fav_date{
+  color:#ccc;
+  font-size:26rpx;
+  position:absolute;
+  top:20rpx;
+  right:60rpx;
+}
+.fav_des{
+  display:-webkit-box;
+  font-size:26rpx;
+  color:#ccc;
+  line-height: 30rpx;
+  text-overflow:ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
