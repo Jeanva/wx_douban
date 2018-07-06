@@ -57,6 +57,7 @@ swiper Image{
   white-space: nowrap;
 }
 .pro-middle{
+  /* height: 300rpx; */
   overflow: hidden;
   width:100%;
 }

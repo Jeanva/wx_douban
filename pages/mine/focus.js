@@ -5,9 +5,65 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
-  },
+    title:'我的关注',
+    currentTab:0,
+    index:0,
+    focusList:[
+      { title:'频道',
+        cur:0,
+        list:[
+          { "name": '黑猫警长', "img": "/image/bing.jpeg"},
+          { "name": '黑猫警长', "img": "/image/bing.jpeg"},
+          { "name": '黑猫警长', "img": "/image/bing.jpeg"}
+        ]
+      },
+      { title: '人物 ',
+        cur:1,
+        list: [
+          { "name": '黑猫警长1', "img": "/image/bing.jpeg" },
+          { "name": '黑猫警长1', "img": "/image/bing.jpeg" },
+          { "name": '黑猫警长1', "img": "/image/bing.jpeg" }
+        ]
+       },
+      { title: '话题' ,
+        cur:2,
+        list: [
+          { "name": '黑猫警长2', "img": "/image/bing.jpeg" },
+          { "name": '黑猫警长2', "img": "/image/bing.jpeg" },
+          { "name": '黑猫警长2', "img": "/image/bing.jpeg" }
+        ]
+      },
+      { title: '用户' ,
+        cur:3,
+        list: [
+          { "name": '黑猫警长3', "img": "/image/bing.jpeg" },
+          { "name": '黑猫警长3', "img": "/image/bing.jpeg" },
+          { "name": '黑猫警长3', "img": "/image/bing.jpeg" }
+        ]
+      }
+    ],
 
+  },
+  toScrlist:function(e){
+    // console.log(e.currentTarget.dataset.current);
+    console.log(e);
+    var _this=this;
+
+    if(this.data.currentTab===e.currentTarget.dataset.current){
+      return false;
+    }else{
+      _this.setData({
+        currentTab:e.currentTarget.dataset.current
+      });
+    }
+  },
+  swiperTab:function(e){
+    console.log('swiperTab',e.detail.current);
+      var _this =this;
+      _this.setData({
+        currentTab: e.detail.current
+      });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

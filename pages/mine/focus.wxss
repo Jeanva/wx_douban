@@ -1,1 +1,58 @@
 /* pages/mine/focus.wxss */
+ @import '/template/title.wxss'; 
+/* @import '/template/scroll-item.wxss'; */
+/* @import '/pages/index/index.wxss'; */
+
+.header-row{
+  border-top:1rpx solid #f2f2f2;
+  border-bottom:1rpx solid #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  height:70rpx;
+  width:100%;
+}
+ /* Tab样式 */
+.focus-col{
+  color:#999;
+  display: inline-block; 
+  font-size:32rpx; 
+  line-height:70rpx;
+  text-align: center;
+  width:25%;
+}
+.focus-col.sel text{
+  color:#000;
+  border-bottom:4rpx solid #000;
+  padding-bottom:10rpx;
+}
+swiper{
+  height:1080rpx;
+  background-color: #f2f2f2;
+}
+swiper-item{
+  height:auto;
+}
+.swiper-item{
+  background-color:#fff;
+  border-bottom:1rpx solid #f2f2f2;
+  padding:20rpx 30rpx;
+  display:flex;
+  flex-direction:row;
+}
+.swiper-item image{
+  width:70rpx;
+  height:70rpx;
+  border-radius:35rpx;
+}
+.list-des{
+  font-size:32rpx;
+  line-height:70rpx; 
+  text-indent:1em;
+}
+.chan-scroll{
+  background-color:#f2f2f2;
+  display:block;
+  height:1070rpx;
+  white-space:nowrap;
+}

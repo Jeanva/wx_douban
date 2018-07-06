@@ -63,21 +63,25 @@ Page({
       {
         "name":"复仇者联盟三",
         "img":"/image/fulian3.jpg",
+        "want": false,
         "score":"0"
       },
       {
         "name":"昼颜",
         "img":"/image/zhouyan.jpg",
+        "want":false,
         "score":"1"
       },
       {
         "name":"完美陌生人",
         "img":"/image/msr.jpg",
+        "want": false,
         "score":"3"
       },
       {
         "name":"罪途2",
         "img":"/image/zuitu.jpg",
+        "want": false,
         "score":"4"
       }
     ],
@@ -93,7 +97,7 @@ Page({
       },
       {
         "film_tag":"今晚我有空",
-        "film_desc":"豆瓣9.1分，封神般的演技",
+        "film_desc":"豆瓣9.1分，封神般的演技,品味经典",
         "img":"/image/hps.jpg"
       },
       {
@@ -103,7 +107,7 @@ Page({
         },
         {
           "film_tag":"今晚我有空",
-          "film_desc":"豆瓣9.1分，封神般的演技",
+          "film_desc":"豆瓣9.1分，封神般的演技，吊打90后面瘫",
           "img":"/image/hps.jpg"
         }
     ]
@@ -169,11 +173,30 @@ Page({
     console.log(e.currentTarget);
   },
   addToList:function(e){
-    let selectToAdd=this.selectToAdd;
-    // this.setData(
-    //   selectToAdd=true
-    // );
-    console.log(e.currentTarget);
-    console.log(selectToAdd);
+    var _this = this;
+    console.log(e.currentTarget.dataset.sel);
+    // console.log(this.data.newfilms.want);
+    var str=JSON.stringify(e.currentTarget.dataset.sel);
+    var want = this.data.newfilms.want;
+    let newfilms = this.data.newfilms;
+    for(var i=0;i<newfilms.length;i++){
+      let tmpStr = JSON.stringify(newfilms[i]);
+        if(tmpStr==str){
+          console.log('i',i);
+          break 
+        }
+    }
+    this.data.newfilms[i].want= !this.data.newfilms[i].want;
+    _this.setData({
+      newfilms:newfilms
+    });
+    // console.log(want);
+    console.log(_this.data.newfilms);
+
+    wx.showToast({
+      title: '以添加到想看列表',
+      icon:'success',
+      duration:2000,
+    })
   }
 })

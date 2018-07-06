@@ -22,17 +22,14 @@
     </block>
 
     <scroll-view scroll-x="true" class='hot-films'>
-
-            <!--<view class="today-movie">
-                <image class="today-m-cover" src="/image/movie_1.jpg" />
-                <text class="sub-tag">缤纷盘点</text>
-                <view class="m-des">
-                    <text>一脸冷漠看完《昆池岩》？这份片单给你更猛的</text>
-                </view>
-            </view>
-            -->
-
-    <template is="today-movie" wx:for="{{film_list}}" data="{{item}}"></template>
+      <!-- <view class="today-movie" wx:for="{{film_list}}" data="{{item}}">
+        <image class="today-m-cover" src="{{item.img}}" />
+        <text class="sub-tag">{{item.film_tag}}</text>
+        <view class="m-des">
+            {{item.film_desc}}
+        </view>
+      </view> -->
+       <template is="today-movie" wx:for="{{film_list}}" data="{{item}}"></template> 
     </scroll-view>
 </view>
 

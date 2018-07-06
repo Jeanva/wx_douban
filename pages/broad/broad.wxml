@@ -5,9 +5,48 @@
 <scroll-view scroll-y="true" style="background-color:#f2f2f2;padding-bottom:80rpx;">
     <image src='/image/3Broad-1.png' style="width:750rpx;height:140rpx;"></image>
 
-    <template is="Card" wx:for="{{card_list}}" data="{{item}}">
+<view wx:for="{{card_list}}" data="{{item}}" >
+ 
+    <view class="Card {{item.showcard?true:'hide'}}" >
+    <!--作者头像-->
+        <view class="b_avatar">
+          <image src="{{item.author_img}}" />
+        </view>
+        <view class="cardCtn" >
+            <!-- 关闭按钮 -->
+            <view class="close-btn" data-i='{{item}}' bindtap='closeCard'><image src="/image/close.png" /></view>
+            <!--作者信息-->
+            <view class='author-follows' >
+                <view>
+                    {{item.author_name}}
+                </view>
+                <text class="follower">{{item.followers+'人关注'}}</text>
+                <!-- <navigator url="" redirect hover-class="follow"> -->
+                    <view class="{{item.focus?'followed':'follow'}}" data-item="{{item}}" data-isfocus='{{item.focus}}' bindtap='focusCard'>{{item.focus?'已关注':'关注'}}</view>
+                <!-- </navigator> -->
+            </view>
+            <!--内容描述-->
+            <view class="des">
+              <view>
+                {{item.des}}
+              </view>
+            </view>
+            <!-- 点赞 评论-->
+            <view class="like-msg">
+                <view bindtap='likeThis' data-like_num='{{item.like_count}}' data-item='{{item}}' data-likethis='{{item.likeThis}}'>
+                    <image src="/image/like.png" class='{{item.likeThis?"hide":""}}' /><image src="/image/likeon.png" class='{{item.likeThis?"":"hide"}}' /><text>{{item.like_count}}</text>
+                </view>
+                <view bindtap=''>
+                    <image src="/image/msg.png" /><text>{{item.com}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>
+    <!-- <template is="Card"  wx:for="{{card_list}}" data="{{item}}" >
         
-    </template>
+    </template> -->
 <!--
 
     <view class="Card" >
@@ -40,12 +79,12 @@
 -->
 </scroll-view>
 
-<view class="bottom">
-    <view class="change-group">
+<view class="bottom {{showSkip?true:'hide'}}">
+    <view class="change-group" data-list='{{card_list}}' bindtap='changeChannel'>
       <image src="/image/refresh.png" />换一批
     </view>
     <view class="choose-group">
-      <text>选好了，去玩小组</text>
-      跳过
+      <text bindtap='toGroup'>选好了，去玩小组</text>
+      <text bindtap='skip' data-target='{{showSkip}}'>跳过</text>
     </view>
 </view>

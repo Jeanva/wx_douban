@@ -5,3 +5,11 @@
     {{test_data}}
 </view>
 
+<view style='width:100%;'>
+<scroll-view scroll-x="true" class='scro'>
+  
+    <view class='scrol-i'>你好</view>
+    <view class='scrol-i'>你好</view>
+  
+</scroll-view>
+</view>

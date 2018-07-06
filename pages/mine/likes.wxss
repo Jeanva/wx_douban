@@ -1,4 +1,5 @@
 /* pages/mine/likes.wxss */
+@import '../../template/title.wxss';
 .my_fav{
   border-bottom:1rpx solid #f2f2f2; 
   line-height:48rpx;

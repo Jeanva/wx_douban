@@ -17,6 +17,7 @@
     "pages/album/upload",
     "pages/scan/scan",
     "pages/logs/logs",
+    "pages/toast/toast",
     "template/scroll-item",
     "template/title",
     "pages/test/test"

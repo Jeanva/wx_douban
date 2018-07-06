@@ -139,15 +139,19 @@ navigator{
 .swiper-tab{
     width: 100%;
     border-bottom: 2rpx solid #ccc;
-    text-align: center;
     height: 88rpx;
     line-height: 88rpx;
     font-weight: bold;
+    padding-left:30rpx;
 }
 .swiper-tab-item{
     display: inline-block;
-    width: 33.33%;
+    font-size:28rpx;
+    padding-left:30rpx;
+    padding-right:30rpx;
+    text-align: center;
     color:#999;
+    overflow: auto;
 }
 .active{
     color:#333;

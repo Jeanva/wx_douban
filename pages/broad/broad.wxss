@@ -8,11 +8,11 @@
     background-color: #fff;
     margin:20rpx;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     font-size:32rpx;
     padding:20rpx;
 }
-.Card image{
+.b_avatar image{
     border-radius:60rpx;
     width:120rpx;
     height:120rpx;
@@ -21,13 +21,21 @@
     padding:0rpx 20rpx 20rpx 20rpx;
     width:520rpx;
 }
+/* 描述 */
 .des{
     font-size:30rpx;
     color:#333;
     height:190rpx;
     padding-top:10rpx;
     /* white-space:no-wrap; */
-    overflow: hidden;
+}
+.des view{
+  /* 如果要文字自动省略，容器不能设置高度 */
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:5;
 }
 .follower{
     font-size:24rpx; 
@@ -49,7 +57,7 @@
     /* background-color: #999; */
     height:100rpx;
 }
-.follow{
+.follow,.followed{
     position:relative;
     top:-60rpx;
     left:330rpx;
@@ -61,6 +69,9 @@
     line-height: 60rpx;
     width:180rpx;
     height:60rpx;
+}
+.followed{
+  background-color:#ddd;
 }
 .like-msg{
     display: flex;
@@ -111,4 +122,7 @@
   padding:6rpx 10rpx 6rpx 10rpx;
   background-color: #ccc;
   margin-right:30rpx;
+}
+.hide{
+  display:none;
 }

@@ -1,13 +1,11 @@
-// template/scroll-item.js
+// pages/toast/toast.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      stars:[0,1,2,3,4],
-      normalStar:'/image/star.png',
-      selectedStar:'/image/star_fill.png',
+  
   },
 
   /**
@@ -65,5 +63,25 @@ Page({
   onShareAppMessage: function () {
   
   },
-  
+  showtst:function(){
+    wx.showToast({
+      title: '提示框',
+      icon:'success',
+      duration:2000
+    })
+  },
+  showmt:function(){
+    wx.showModal({
+      title: '模态化弹窗',
+      content: '显示或隐藏',
+      success:function(res){
+        if(res.confirm){
+          console.log('用户点击确定');
+        }
+        else{
+          console.log('用户点击取消');
+        }
+      }
+    })
+  }
 })

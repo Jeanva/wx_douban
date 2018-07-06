@@ -1,4 +1,12 @@
 <!--template/title.page.wxml-->
 <template name='title'>
+<view class='title-bar'>
+  <view class='left-btn'>
+     <text class='cancel' wx:if='{{showEsc}}'>取消</text>
+  </view>
   <view class='title-center'>{{title}}</view>
+  <view class='right-btn'>
+    <button class='title-btn' wx:if='{{showContinue}}' bindtap="defaultTap" hover-class="defaultTap">继续</button>
+  </view>
+</view>
 </template>

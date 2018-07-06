@@ -1,4 +1,32 @@
 /* template/title.page.wxss */
-.title-center{
+.title-bar{
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+}
+.left-btn{
+  width:30%;
   text-align:center;
+}
+.cancel{
+  /* background: #ccc; */
+  color:#00B51D; 
+}
+.title-center{
+  width:40%;
+  text-align:center;
+}
+.right-btn{
+  /* background: #ccc; */
+  width:30%;
+}
+.title-btn{
+  background-color:#ffffff;
+  border:1rpx solid #00B51D;
+  color:#00B51D;
+  font-size:28rpx;
+  line-height: 50rpx;
+  height:54rpx;
+  margin-top:18rpx;
+  width:120rpx;
 }

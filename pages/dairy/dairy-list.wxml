@@ -1,5 +1,8 @@
 <!--pages/dairy/dairy-list.wxml-->
  <!-- <text>我的日记</text>  -->
+<view>
+   我的日记  <button>写日记</button>
+</view>
 <view class='dairy_list'>
   <view class='dairy' wx:for='{{dairy}}' bindtap=''>
       <view class='dairy_item'>

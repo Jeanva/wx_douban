@@ -15,32 +15,31 @@ Page({
         {
         "tag":"喜欢",
         "imgUrl":"/image/heart.png",
-        "url":'',
-
+        "url":'/pages/mine/likes',
         },
         {
         "tag":"日记",
         "imgUrl":"/image/dairy.png",
-        "url":'/pages/broad/detail',
-        'itemFn':'toDairy',
+        "url":'/pages/dairy/dairy-list',
+        // 'itemFn':'toDairy',
         },
         {
           "tag":"相册",
           "imgUrl":"/image/pics.png",
-          "url":'',
-          "itemFn":'toAlbum'
+          "url":'/pages/album/album',
+          // "itemFn":'toAlbum'
         },
         {
           "tag":"我的关注",
           "imgUrl":"/image/add.png",
-          "url":'',
+          "url":'/pages/mine/focus',
           "itemFn":'',
         },
         {
           "tag":"电影.电视.综艺",
           "imgUrl":"/image/video.png",
-          "url":'',
-          "itemFn":'toBroad',
+          "url":'/pages/audio/audio',
+          // "itemFn":'toBroad',
         },
         {
           "tag":"读书",
@@ -50,17 +49,18 @@ Page({
         {
           "tag":"音乐",
           "imgUrl":"/image/music.png",
-          "url":''
+          "url":'/pages/broad/detail'
         },
         {
           "tag":"钱包",
           "imgUrl":"/image/wallet.png",
-          "url":''
+          "url":'/pages/pay/pay'
         },
         {
           'tag':'地图',
           'imgUrl':'/image/pics.png',
           'url':'',
+
         }
     ]
   },
@@ -120,6 +120,25 @@ Page({
   onShareAppMessage: function () {
   
   },
+  commonFn:function(e){
+    console.log(e.currentTarget.id);
+    console.log(e.currentTarget.dataset.url);
+    //如果当前对象是扫一扫，就调用扫一扫
+     if ( e.currentTarget.id== '扫一扫'){
+       this.scan();
+       return;
+      }
+      if(e.currentTarget.id=='地图'){
+        this.getLocation();
+        return;
+      }
+      else{
+      wx.navigateTo({
+        url:e.currentTarget.dataset.url
+      });
+      }
+  },
+  /*
   gotoalbum:function(){
     wx.navigateTo({
       url: '/pages/album/album',
@@ -132,7 +151,22 @@ Page({
     });
     console.log(e);
     console.log(data.tagList);
+  },*/
+  getLocation:function(){
+    wx.getLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      success: function (res) {
+        var latitude = res.latitude
+        var longitude = res.longitude
+        wx.openLocation({
+          latitude: latitude,
+          longitude: longitude,
+          scale: 28
+        })
+      }
+    })
   },
+
   //扫一扫
   scan: function () {
     var that = this;
@@ -167,15 +201,15 @@ Page({
   //   })
   // }
   // 去日记详情页
-  toDairy:function(){
+  /*toDairy:function(){
     wx.navigateTo({
       url: '../../pages/dairy/dairy-list',
     })
-  },
+  },*/
   //去相册
-  toAlbum:function(){
+  /*toAlbum:function(){
     wx.navigateTo({
       url:'../../pages/album/album',
     });
-  }
+  }*/
 })

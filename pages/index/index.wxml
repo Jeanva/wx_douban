@@ -17,8 +17,6 @@
     -->
     <template is="scroll-item" wx:for="{{headerslist}}" data="{{item}}">
     </template>
-
-    
 </scroll-view>   
 
 
@@ -43,8 +41,9 @@
          图片 
         <view class="item-right"><image class="pro-img" src="{{item.img}}"></image></view>
       </view>-->
-      <template is="pro-middle" data="{{item}}"></template>
-
+      
+      <template is="pro-middle" data="{{item}}" bindtap='bindViewTap'></template>
+      
       <!--<view class="pro-footer">
          <image class="author_avatar" src="{{author_img}}"></image>
          <text class="author">{{item.author}}</text>

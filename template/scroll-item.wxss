@@ -7,8 +7,6 @@
   height:56rpx;
   width:200rpx;
 }
-
-
 .sv-search-film{
   display:flex;
   white-space:nowrap; 
@@ -52,11 +50,19 @@
 .add-film{
   background-color:#ccc;font-size:48rpx;
   position:relative;
-  bottom:-60rpx;
+  bottom:-58rpx;
   opacity:0.5;
-  width:60rpx;height:60rpx;
+  width:60rpx;
+  height:60rpx;
   line-height:48rpx;
   text-align:center;
+}
+.add-film image{
+  width:32rpx;
+  height:32rpx;
+}
+.hide_show{
+  display:none;
 }
 .new-film-cover{
   border-radius:10rpx;
@@ -73,13 +79,13 @@
   background-color:#f2f2f2;
   display:inline-block;
   width:400rpx;
-  height:430rpx;
-  overflow: hidden;
-  white-space:normal;
+  height:420rpx;
+  overflow: hidden;    
   margin-right:24rpx;
   margin-top:20rpx;
 }
 .today-m-cover{
+  display: block;
   width:400rpx;
   height:300rpx;
 }
@@ -93,12 +99,20 @@
   padding:0rpx 14rpx 5rpx 14rpx;
 }
 .m-des{
-  width:400rpx; 
-  height:100rpx;
+  display: block;
+  width:360rpx; 
+  height:80rpx;
   font-size:28rpx;
   background-color:#222;
   color:#fff;
-  position:relative;
-  top:-60rpx;
-  padding:20rpx;
+  margin-top:-50rpx;
+  padding:20rpx 20rpx;
+
+  /* display:-webkit-box;
+   overflow: hidden; 
+   word-break: break-all; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;   */
+   white-space:normal;   
+  text-overflow: ellipsis; 
 }

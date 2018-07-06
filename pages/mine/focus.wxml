@@ -1,2 +1,96 @@
 <!--pages/mine/focus.wxml-->
-<text>pages/mine/focus.wxml</text>
+<import src='../../template/title.wxml' />
+<import src='../../template/scroll-item.wxml' />
+<template is='title' data='{{title}}'></template>
+<!-- <template is='scroll-item' wx:for="{{focusList}}" data="{{item}}"></template> -->
+
+<view style='width:750rpx;'>
+  <scroll-view class='header-row' scroll-x="true">
+  
+    <view class='focus-col {{currentTab==item.cur?"sel":""}}'  wx:for="{{focusList}}" data="{{item}}" data-current='{{item.cur}}' bindtap="toScrlist">
+      <text>{{item.title}}</text>
+    </view>
+    <!-- <view class='focus-col {{currentTab==1?"sel":""}}' data-current='1' bindtap="toScrlist">
+      <text>频道</text>
+    </view>
+    <view class='focus-col {{currentTab==2?"sel":""}}' data-current='2' bindtap="toScrlist">
+      <text>频道</text>
+    </view>
+    <view class='focus-col {{currentTab==3?"sel":""}}' data-current='3' bindtap="toScrlist">
+      <text>频道</text>
+    </view>
+    <view class='focus-col' data-current='4' bindtap="toScrlist">
+      <text>频道</text>
+    </view> -->
+  
+   </scroll-view> 
+</view>
+
+<swiper current='{{currentTab}}' bindchange='swiperTab'>
+  <swiper-item wx:for="{{focusList}}">
+      <scroll-view scroll-y='true' class='chan-scroll'>
+        <view wx:for="{{item.list}}">
+          <view class='swiper-item'>
+              <image src='/image/bing.jpeg'></image>
+              <text class='list-des'>{{item.name}}</text>
+          </view>      
+        </view>
+      </scroll-view>
+  </swiper-item>
+
+  <!--<swiper-item>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+    <view class='swiper-item'>
+        <image src='/image/bing.jpeg'></image>
+        <text class='list-des'>黑猫十一</text>
+    </view>
+  </swiper-item>-->
+</swiper>
+ 

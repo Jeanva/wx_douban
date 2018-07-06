@@ -17,7 +17,7 @@ Page({
       {
         img:'/image/time.png',
         title:'豆瓣时间',
-        url:""
+        url:"pages/broad/detail",
       },
       {
         img:'/image/shopping.png',
@@ -100,12 +100,31 @@ Page({
   onLoad: function () {
     this.setData({
       test:'01',
-    })
+    });
+    console.log(this.data.test);
   },
   toDetail:function(e){
     console.log(e);
     var index=e.currentTarget.dataset.index;
     console.log(index);
   },
-  
+  gotoDetail:function(){
+    wx.navigateTo({
+      url:"../../pages/broad/detail",
+    });
+    console.log('gotoDetail');
+  },
+  /* 跳转到详情页 */
+  toPage:function(){
+    wx.navigateTo({
+      url:'../../pages/broad/detail'
+    });
+    console.log('toPage from index.js');
+  },
+  toAuthor:function(){
+    wx.navigateTo({
+      url:'../../pages/broad/detail'
+    });
+    console.log('toAuthor from index.js');
+  }
 })

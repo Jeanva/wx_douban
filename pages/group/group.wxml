@@ -41,6 +41,4 @@
 <template is="group-content" wx:for="{{grouplist}}" data="{{item}}">
 </template>
 
-
-
 </scroll-view>

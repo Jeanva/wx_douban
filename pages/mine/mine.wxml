@@ -33,7 +33,8 @@
 
 <view class="listItem'" wx:for="{{tagList}}">
     <image src="{{item.imgUrl}}"  />
-    <text bindtap="{{item.itemFn}}" >{{item.tag}}</text>
+    <text id="{{item.tag}}" data-url="{{item.url}}" bindtap="commonFn">{{item.tag}}</text>
+    <!-- <text bindtap="{{item.itemFn}}" >{{item.tag}}</text> -->
     <view class="redirectTo">
         <image src="/image/arrow.png" />
     </view>
